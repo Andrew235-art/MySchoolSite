@@ -1,0 +1,120 @@
+/* style.css */
+
+/* Type Selector (Applied to all body text) */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #34495e;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+/* Attribute Selector (Style external links that open in a new tab) */
+a[target="_blank"] {
+    color: #000;
+    border: #000;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+a[target="_blank"]:hover{
+    color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #2c3e50;
+}
+
+main p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* Class Selector (For tables) */
+#schedule {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#schedule th, #schedule td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#schedule th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Class Selector (For ordered lists) */
+ol {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* ID Selector (Image styles) */
+#school-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
