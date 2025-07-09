@@ -101,13 +101,131 @@ ol {
     margin: 20px auto;
 }
 
+/* Styling for unordered lists in about.html */
+main ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    list-style-type: disc; /* Or 'circle', 'square' */
+    padding-left: 40px; /* Add some padding for the list items */
+}
+
+main ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Styling for definition lists in admissions.html (FAQs) */
+main dl {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+main dt {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+main dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
 /* ID Selector (Image styles) */
 #school-image {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
+    border-radius: 8px; /* Added rounded corners to images */
 }
+
+/* Contact Page Specific Styles */
+#contact-details, #contact-form-section, #map {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff; /* Give sections a background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#contact-details h3, #contact-form-section h3, #map h3 {
+    color: #34495e;
+    margin-top: 0;
+}
+
+/* Form Styling */
+form div, form fieldset {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="tel"],
+form textarea {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for width calculation */
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #34495e;
+    padding: 0 5px;
+}
+
+form .container {
+    text-align: center; /* Center buttons */
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+form input[type="reset"] {
+    background-color: #e74c3c;
+}
+
+form input[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
 
 /* Footer */
 footer {
@@ -117,4 +235,5 @@ footer {
     text-align: center;
     position: relative;
     width: 100%;
+    margin-top: 30px; /* Add some space above the footer */
 }
